@@ -1,0 +1,45 @@
+programa {
+	funcao inicio() {
+		   
+		   inteiro lado1
+		   inteiro lado2
+		   inteiro lado3
+		   
+		   escreva("Olá, qual é a medida do primeiro lado de de seu triangulo?(Me informe somente com números) ")
+		   leia(lado1)
+		   limpa()
+		   
+		   escreva("Agora me informe a medida do segundo lado de de seu triangulo: ")
+		   leia(lado2)
+		   limpa()
+		   
+		   escreva(" Agora a do terceiro lado de de seu triangulo: ")
+		   leia(lado3)
+		   limpa()
+		   
+		   se(lado1+lado2 > lado3 e lado2+lado3 > lado1 e lado3+lado1 > lado2){
+		      
+		       
+		      se(lado1 != lado2 e lado3 != lado1 e lado3 != lado2  ){
+		          
+		      escreva("É um triângulo escaleno")
+		      
+		      }senao se(lado1 == lado2 e lado1 == lado3 e lado2 == lado3){
+		          
+		      escreva("É um triângulo equilátero")
+		          
+		      }senao{
+		          
+		      escreva("É um triângulo isósceles")    
+		          
+		      }   
+		       
+		   }senao{
+		       
+		   escreva ("Ops! Sua medida não é de um triângulo!")
+		   }
+		    
+		 
+		    
+	}
+}
